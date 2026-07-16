@@ -1,0 +1,41 @@
+{
+  "name": "pardi",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI Product Architect - Transform ideas into implementation-ready software blueprints",
+  "keywords": [
+    "ai",
+    "product-management",
+    "architecture",
+    "prd",
+    "documentation"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "start": "turbo run start",
+    "lint": "turbo run lint",
+    "type-check": "turbo run type-check",
+    "test": "turbo run test",
+    "test:watch": "turbo run test:watch",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "format": "prettier --write \"**/*.{ts,tsx,md,json}\"",
+    "prepare": "husky install"
+  },
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+    "@turbo/gen": "^2.0.0",
+    "husky": "^9.0.11",
+    "prettier": "^3.3.2",
+    "turbo": "^2.0.0",
+    "typescript": "^5.5.3"
+  },
+  "packageManager": "pnpm@9.4.0",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}

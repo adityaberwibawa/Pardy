@@ -1,0 +1,26 @@
+{
+  "name": "@pardi/db",
+  "version": "0.1.0",
+  "private": true,
+  "exports": {
+    ".": "./index.ts",
+    "./schema": "./schema/index.ts",
+    "./client": "./client.ts"
+  },
+  "scripts": {
+    "generate": "drizzle-kit generate",
+    "migrate": "drizzle-kit migrate",
+    "push": "drizzle-kit push",
+    "studio": "drizzle-kit studio",
+    "check": "drizzle-kit check"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.44.3",
+    "drizzle-orm": "^0.32.0",
+    "postgres": "^3.4.4"
+  },
+  "devDependencies": {
+    "drizzle-kit": "^0.23.0",
+    "typescript": "^5.5.3"
+  }
+}

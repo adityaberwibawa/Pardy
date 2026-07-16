@@ -1,0 +1,26 @@
+// Export all schema tables and relations
+export * from './workspaces'
+export * from './projects'
+export * from './artifacts'
+export * from './prd-brd-stories'
+export * from './design-tables'
+export * from './execution'
+export * from './comments'
+
+// Export enums for use in application code
+export type PlanTier = 'free' | 'builder' | 'team' | 'enterprise'
+export type WorkspaceRole = 'owner' | 'admin' | 'editor' | 'commenter' | 'viewer'
+export type ArtifactType = 
+  | 'interview'
+  | 'validation'
+  | 'market_analysis'
+  | 'prd'
+  | 'brd'
+  | 'user_story'
+  | 'architecture'
+  | 'db_schema'
+  | 'api_contract'
+  | 'task'
+  | 'prompt'
+export type StoryStatus = 'draft' | 'ready' | 'in_progress' | 'completed'
+export type ProjectStatus = 'interview_pending' | 'in_progress' | 'completed' | 'archived'
